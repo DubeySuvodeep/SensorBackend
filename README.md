@@ -11,7 +11,7 @@
 3. Create a Database<br/>
 <code>DB_NAME = 'Sensor'<code>
 
-4. Create a Collection
+4. Create a Collection<br/>
 <code>Collection_Name = 'sensor_all_data'</code>
 
 5. Go to the django Conatiner and execute the script in the tests.py to populate the mongo with test data<br/>
