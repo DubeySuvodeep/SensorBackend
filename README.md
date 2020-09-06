@@ -1,8 +1,8 @@
 # SensorBackend
 
 
-# To start the project up and running
-sudo docker-compose up --build
+1. To start the project up and running
+<code>sudo docker-compose up --build</code>
 
 # If properly build the project will run on 0.0.0.0:8000 and mongo will run on 0.0.0.0:27017
 # Download a Mongo Client like Robo3T and create the following
