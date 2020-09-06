@@ -1,0 +1,14 @@
+Django==2.2.2
+django-cors-headers==3.0.2
+djangorestframework==3.9.4
+djangorestframework-jwt==1.11.0
+pymongo==3.10.1
+tzlocal==1.5.1
+uritemplate==3.0.0
+urllib3==1.25.3
+redis==2.10.6
+regex==2019.6.8
+python-dateutil==2.8.0
+python3-openid==3.1.0
+drf-base64==2.0
+drf-yasg==1.16.0

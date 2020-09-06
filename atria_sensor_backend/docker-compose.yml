@@ -1,0 +1,28 @@
+version: "3"
+services:
+
+  python:
+    container_name: atria_sensor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: web:latest
+    volumes:
+      - ./requirements.txt:/application/requirements.txt
+      - ./:/application/atria_sensor_backend/
+    ports:
+      - "8000:8000"
+    restart: always
+
+  mongo:
+    image: 'mongo'
+    container_name: 'mongo_atria'
+    environment: 
+      - MONGO_INITDB_DATABASE=atria
+      - MONGO_INITDB_ROOT_USERNAME=atria
+      - MONGO_INITDB_ROOT_PASSWORD=atria
+    volumes: 
+      - ./init-mongo.js://docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo-volume:/data/db 
+    ports: 
+      - '27017:27017'
